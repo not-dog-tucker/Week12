@@ -19,7 +19,13 @@ def UpdateString(string_1,string_2,index):
     return string_1
 
 ## find word count ##
-
+def FindWordCount(lst, string):
+    count = 0
+    for i in lst:
+        if string in lst:
+            count += 1
+        return count
+    
 ## score finder ##
 
 ## union ##
