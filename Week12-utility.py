@@ -27,8 +27,28 @@ def FindWordCount(lst, string):
         return count
     
 ## score finder ##
+def ScoreFinder(names,scores,player):
+    score = -1
+    for i in range(len(names)):
+        if (names[i].lower() == player.lower()):
+            score = scores[i]
+            break
+    if (scores ==-1):
+        print('Player not found')
+    else:
+        print(player,'got a score of',score)
+            
 
 ## union ##
+def Union(list_1,list_2):
+    list_3=[]
+    for i in list_1:
+        if i not in list_3:
+            list_3.append(i)
+        for i in list_2:
+            if i not in list_3:
+                list_3.append(i)
+        return list_3
 
 ## intersection ##
 
