@@ -51,6 +51,13 @@ def Union(list_1,list_2):
         return list_3
 
 ## intersection ##
+def Intersection(list_1,list_2):
+    list_3=[]
+    for i in list_1:
+        if (not i in list_3) and (i in list_2):
+            for j in range(min(list_1.count(i),list_2.count(i))):
+                list_3.append(i)
+    return list_3
 
 ## not in ##
 
